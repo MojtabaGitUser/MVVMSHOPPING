@@ -11,6 +11,7 @@ class ShoppingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shopping)
+	val str	= String()
         val database = ShoppingDatabase(this)
         val repository = ShoppingRepository(database)
         val factory = ShoppingViewModelFactory(repository)
